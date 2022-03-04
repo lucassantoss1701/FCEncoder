@@ -5,3 +5,4 @@ cover.out
 bucket-credential.json
 go.sum
 /vendor
+encoder

@@ -1,0 +1,7 @@
+/.vscode
+.env*
+__debug*
+cover.out
+bucket-credential.json
+go.sum
+/vendor

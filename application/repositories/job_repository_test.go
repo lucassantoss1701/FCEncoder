@@ -1,9 +1,9 @@
 package repositories_test
 
 import (
-	"enconder/application/repositories"
-	"enconder/domain"
-	"enconder/framework/database"
+	"encoder/application/repositories"
+	"encoder/domain"
+	"encoder/framework/database"
 	"testing"
 	"time"
 

@@ -1,7 +1,7 @@
 package repositories
 
 import (
-	"enconder/domain"
+	"encoder/domain"
 	"fmt"
 
 	"github.com/jinzhu/gorm"

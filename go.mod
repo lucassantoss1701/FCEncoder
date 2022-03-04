@@ -1,4 +1,4 @@
-module enconder
+module encoder
 
 go 1.14
 

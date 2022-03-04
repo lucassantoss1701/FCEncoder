@@ -1,7 +1,7 @@
 package domain_test
 
 import (
-	"enconder/domain"
+	"encoder/domain"
 	"testing"
 	"time"
 

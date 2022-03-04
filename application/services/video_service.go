@@ -2,8 +2,8 @@ package services
 
 import (
 	"context"
-	"enconder/application/repositories"
-	"enconder/domain"
+	"encoder/application/repositories"
+	"encoder/domain"
 	"io/ioutil"
 	"log"
 	"os"

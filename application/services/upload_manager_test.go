@@ -1,7 +1,7 @@
 package services_test
 
 import (
-	"enconder/application/services"
+	"encoder/application/services"
 	"fmt"
 	"log"
 	"os"
@@ -27,7 +27,7 @@ func TestVideoServiceUpload(t *testing.T) {
 	videoService.Video = video
 	videoService.VideoRepository = repo
 
-	err := videoService.Download("fc-enconder")
+	err := videoService.Download("fc-encoder")
 	require.Nil(t, err)
 
 	err = videoService.Fragment()
@@ -37,7 +37,7 @@ func TestVideoServiceUpload(t *testing.T) {
 	require.Nil(t, err)
 
 	videoUpload := services.NewVideoUpload()
-	videoUpload.OutputBucket = "fc-enconder"
+	videoUpload.OutputBucket = "fc-encoder"
 	videoUpload.VideoPath = os.Getenv("localStoragePath") + "/" + video.ID
 
 	doneUpload := make(chan string)

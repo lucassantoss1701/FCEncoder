@@ -1,11 +1,12 @@
 package database
 
 import (
-	"enconder/domain"
+	"encoder/domain"
 	"log"
+
+	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/sqlite"
 	_ "github.com/lib/pq"
-	"github.com/jinzhu/gorm"
 )
 
 type Database struct {

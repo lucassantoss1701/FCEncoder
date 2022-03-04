@@ -1,10 +1,10 @@
 package services_test
 
 import (
-	"enconder/application/repositories"
-	"enconder/application/services"
-	"enconder/domain"
-	"enconder/framework/database"
+	"encoder/application/repositories"
+	"encoder/application/services"
+	"encoder/domain"
+	"encoder/framework/database"
 	"log"
 	"testing"
 	"time"
@@ -44,7 +44,7 @@ func TestVideoServiceDownload(t *testing.T) {
 	videoService.Video = video
 	videoService.VideoRepository = repo
 
-	err := videoService.Download("fc-enconder")
+	err := videoService.Download("fc-encoder")
 	require.Nil(t, err)
 
 	err = videoService.Fragment()
